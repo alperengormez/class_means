@@ -1,0 +1,80 @@
+C:\>python class_means.py
+-----------
+Dataset: CIFAR-10
+Files already downloaded and verified
+Files already downloaded and verified
+-----------
+Loading pretrained WideResNet-101 Model
+[Trained for 350 epochs]. Test loss: 0.50805  |  Test accuracy: 88.770%, with Correct: 8877, Total: 10000
+-----------
+Saving Intermediate Outputs Using Train Set [35 Exit Locations - this will take a while]
+Exit Location 35 out of 35
+-----------
+Saving Intermediate Outputs Using Test Set [35 Exit Locations - this will take a while]
+Exit Location 35 out of 35
+-----------
+FLOPs per Layer Evaluated Manually
+Individual: [3.601e-02 2.904e-02 2.920e-02 2.920e-02 3.038e-02 2.913e-02 2.913e-02
+ 2.913e-02 3.034e-02 2.909e-02 2.909e-02 2.909e-02 2.909e-02 2.909e-02
+ 2.909e-02 2.909e-02 2.909e-02 2.909e-02 2.909e-02 2.909e-02 2.909e-02
+ 2.909e-02 2.909e-02 2.909e-02 2.909e-02 2.909e-02 2.909e-02 2.909e-02
+ 2.909e-02 2.909e-02 2.909e-02 3.032e-02 2.907e-02 2.907e-02 1.220e-05]
+Cumulative: [0.036 0.065 0.094 0.123 0.154 0.183 0.212 0.241 0.272 0.301 0.33  0.359
+ 0.388 0.417 0.446 0.475 0.504 0.533 0.562 0.592 0.621 0.65  0.679 0.708
+ 0.737 0.766 0.795 0.824 0.853 0.882 0.912 0.942 0.971 1.    1.   ]
+##################################
+-----------
+Computing Class Means on Train Set
+Class means for layer (train set) 35 out of 3535
+-----------
+Number of training samples that would have been correctly classified if exited at Layer i (i=0,1,...,34)
+[14408. 22677. 24344. 26442. 34239. 37378. 40329. 43825. 48901. 49089.
+ 49110. 49250. 49298. 49391. 49441. 49521. 49541. 49578. 49600. 49692.
+ 49647. 49640. 49644. 49656. 49683. 49706. 49681. 49673. 49676. 49664.
+ 49700. 49810. 49786. 49779. 49801.]
+##################################
+-----------
+Optimizing thresholds 100 out of 100-----------
+Computing Class Means on Test Set
+Class means after layer (test set) 35 out of 35
+-----------
+Number of test samples that would have been correctly classified if exited at Layer i (i=0,1,...,34)
+[2958. 4745. 5173. 5627. 6955. 7465. 7852. 8323. 8708. 8741. 8735. 8769.
+ 8780. 8781. 8791. 8794. 8801. 8802. 8813. 8822. 8822. 8822. 8826. 8824.
+ 8823. 8823. 8827. 8823. 8822. 8819. 8819. 8861. 8863. 8868. 8873.]
+##################################
+-----------
+Evaluating the thresholds
+-----------
+Evaluating thresholds 100 out of 100##################################
+-----------
+Timing evaluation
+Files already downloaded and verified
+Files already downloaded and verified
+Testing on 10000 images
+***********************
+Plain prediction without any early exit      0.89 Accuracy    1.00 FLOPs    0.010305s
+
+Class Means
+-----------------------
+Operating point closest to  0.1 FLOPs:   0.52 Accuracy    0.10 FLOPs    0.002757 s
+-----------------------
+Operating point closest to  0.2 FLOPs:   0.78 Accuracy    0.20 FLOPs    0.001249 s
+-----------------------
+Operating point closest to  0.3 FLOPs:   0.87 Accuracy    0.30 FLOPs    0.004728 s
+-----------------------
+Operating point closest to  0.4 FLOPs:   0.88 Accuracy    0.40 FLOPs    0.005302 s
+-----------------------
+Operating point closest to  0.5 FLOPs:   0.88 Accuracy    0.49 FLOPs    0.001215 s
+-----------------------
+Operating point closest to  0.6 FLOPs:   0.88 Accuracy    0.60 FLOPs    0.002024 s
+-----------------------
+Operating point closest to  0.7 FLOPs:   0.88 Accuracy    0.69 FLOPs    0.001301 s
+-----------------------
+Operating point closest to  0.8 FLOPs:   0.89 Accuracy    0.76 FLOPs    0.001854 s
+-----------------------
+Operating point closest to  0.9 FLOPs:   0.89 Accuracy    1.00 FLOPs    0.001576 s
+-----------------------
+Operating point closest to  1.0 FLOPs:   0.89 Accuracy    1.00 FLOPs    0.001544 s
+
+C:\>
